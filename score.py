@@ -27,13 +27,14 @@ def convert(x):
 
 if __name__ == '__main__':
 
-    f = open('score.html')
+    f = open('score.txt')
     content = f.readlines()
     f.close()
 
     interest = filter(lambda x: x.strip().startswith("<td align='left'>"), content)
     weights = interest[7::13]
     scores = interest[9::13]
+
 
     weights = map(lambda x: float(re.findall(r'\d+', x)[0]), weights)
     scores = map(lambda x: convert(re.findall(r'\d+', x)[0]), scores)
