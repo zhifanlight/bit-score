@@ -35,7 +35,6 @@ if __name__ == '__main__':
     weights = interest[7::13]
     scores = interest[9::13]
 
-
     weights = map(lambda x: float(re.findall(r'\d+', x)[0]), weights)
     scores = map(lambda x: convert(re.findall(r'\d+', x)[0]), scores)
 
@@ -44,4 +43,3 @@ if __name__ == '__main__':
         total += weights[i] * scores[i]
 
     print 'score = %.3f' % (total / sum(weights))
-
