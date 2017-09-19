@@ -1,5 +1,7 @@
-- 在研究生教育管理系统上右键 “查看框架的源代码”
+### 在 Win 和 Mac 下的 Chrome 中测试通过
 
-- 将源代码保存成 score.py 同目录下的 score.html
+- 在研究生教育管理系统－培养管理－成绩查询 页面中 右键 “查看框架的源代码”
 
-- python score.py 即可
+- 将源代码保存成 score.html，放到 score.py 目录下
+
+- python score.py 
